@@ -25,3 +25,8 @@ dotnet publish -c release -o /app --no-restore
 ```
 dotnet aspnetapp.dll
 ```
+
+- Then you should be able to access the application on port 80:
+```
+http://localhost
+
