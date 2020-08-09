@@ -7,8 +7,8 @@ pipeline {environment {
     stages {
         stage('Build') {
             steps {
-			dotnet restore
-			dotnet publish -c release -o /app --no-restore
+			sh 'dotnet restore'
+			sh 'net publish -c release -o /app --no-restore'
             }
         }
         stage('Building image') {
